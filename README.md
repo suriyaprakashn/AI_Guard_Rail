@@ -53,7 +53,7 @@ streamlit run app.py
 
 Open your browser to http://localhost:8501
 
-**📁 Project Structure**
+## 📁 Project Structure
 
 AI_Guard_Rail/
 ├── app.py                          # Main Streamlit application
@@ -68,9 +68,9 @@ AI_Guard_Rail/
 ├── data/                          # Cyber-bullying datasets
 └── models/                        # Trained model files (auto-created)
 
-**🎯 Usage**
+## 🎯 Usage
 
-*Basic Analysis*
+**Basic Analysis**
 
 Select Age Profile in sidebar (child, teen, adult)
 
