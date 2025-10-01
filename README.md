@@ -49,10 +49,13 @@ youtube_parsed_dataset.csv
 Run the application
 
 bash
+
 streamlit run app.py
+
 Open your browser to http://localhost:8501
 
 📁 Project Structure
+
 text
 AI_Guard_Rail/
 ├── app.py                          # Main Streamlit application
@@ -66,8 +69,11 @@ AI_Guard_Rail/
 ├── test_system.py                 # System testing script
 ├── data/                          # Cyber-bullying datasets
 └── models/                        # Trained model files (auto-created)
+
 🎯 Usage
+
 Basic Analysis
+
 Select Age Profile in sidebar (child, teen, adult)
 
 Enter a message in the text area or use quick test buttons
@@ -83,6 +89,7 @@ Recommended actions
 System metrics
 
 Dataset Management
+
 Click "Load Cyber-bullying Datasets" to load training data
 
 Click "Retrain Models" to train new models on loaded data
@@ -90,6 +97,7 @@ Click "Retrain Models" to train new models on loaded data
 Click "Run Evaluation" to test model performance
 
 Quick Test Messages
+
 Use the sidebar buttons to test common scenarios:
 
 Normal conversation
@@ -103,7 +111,9 @@ Inappropriate content
 Escalating conversations
 
 🔧 Configuration
+
 Age Profiles
+
 Child (5-12): No violence, drugs, explicit content + simple language
 
 Teen (13-17): No explicit content + moderate complexity
@@ -111,6 +121,7 @@ Teen (13-17): No explicit content + moderate complexity
 Adult (18+): Minimal restrictions
 
 Model Settings
+
 Adjust detection thresholds in individual model files:
 
 Abuse detection: Abuse_Language_Detection.py (toxic_threshold = 0.7)
@@ -120,6 +131,7 @@ Crisis intervention: Crisis_Intervention.py (risk thresholds)
 Content filtering: Content_Filtering.py (complexity thresholds)
 
 📊 Model Evaluation
+
 Run comprehensive evaluation:
 
 bash
@@ -139,7 +151,9 @@ ROC-AUC curves (when probability scores available)
 Dataset-specific performance
 
 🛡️ Safety Features
+
 Multi-layered Detection
+
 Primary: Transformer models (BERT-based)
 
 Secondary: Machine learning models (TF-IDF + features)
@@ -149,6 +163,7 @@ Tertiary: Rule-based patterns
 Final: Context-aware heuristics
 
 Crisis Resources
+
 Automatic provision of emergency resources for high-risk situations:
 
 National Suicide Prevention Lifeline: 988 (US)
@@ -167,7 +182,9 @@ Self-reflection pattern recognition
 Multilingual support
 
 🚨 Emergency Protocols
+
 Critical Risk Responses
+
 IMMEDIATE_HUMAN: Critical crisis situations
 
 PRIORITY_HUMAN: High-risk abuse or escalation
@@ -177,6 +194,7 @@ ROUTINE_CHECK: Moderate risk content
 MONITOR: Low risk, continued observation
 
 Content Blocking
+
 BLOCK: Inappropriate content for age group
 
 ALLOW: Safe content
@@ -184,7 +202,9 @@ ALLOW: Safe content
 FLAG: Requires human review
 
 🔍 Technical Details
+
 Models Used
+
 Abuse Detection: Fine-tuned DistilBERT on cyber-bullying datasets
 
 ML Fallback: Random Forest with TF-IDF + behavioral features
@@ -192,6 +212,7 @@ ML Fallback: Random Forest with TF-IDF + behavioral features
 Rule-based: 50+ patterns for slang, evasion, and platform-specific content
 
 Performance
+
 Real-time processing: < 2 seconds per message
 
 Accuracy: 85-92% on abuse detection
@@ -201,7 +222,9 @@ Recall: 89% on crisis keyword detection
 Precision: 87% on content filtering
 
 🐛 Troubleshooting
+
 Common Issues
+
 Models not loading
 
 Run "Retrain Models" in sidebar
@@ -221,6 +244,7 @@ Use virtual environment
 Check Python version (3.8+ required)
 
 Support
+
 For technical support:
 
 Check the console for error messages
@@ -230,9 +254,11 @@ Verify dataset formats match expected structure
 Ensure all dependencies are installed
 
 📄 License
+
 MIT License - see LICENSE file for details.
 
 🤝 Contributing
+
 Fork the repository
 
 Create a feature branch
@@ -244,6 +270,7 @@ Add tests
 Submit a pull request
 
 🎓 Citation
+
 If you use this code in your research, please cite:
 
 bibtex
