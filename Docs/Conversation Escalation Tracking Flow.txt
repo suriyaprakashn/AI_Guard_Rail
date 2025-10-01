@@ -1,0 +1,33 @@
+┌─────────────────┐    ┌───────────────────┐    ┌────────────────────┐
+│  CURRENT MSG    │───▶│  INTENSITY CALC   │───▶│  TREND ANALYSIS    │
+│ "I HATE YOU!"   │    │                   │    │                    │
+└─────────────────┘    │ • ! count: +0.2   │    │ ┌────────────────┐ │
+                       │ • CAPS ratio: +0.3│    │ │ Abuse Trend    │ │
+┌─────────────────┐    │ • Negative: +0.3  │    │ │  Slope: +0.15  │ │
+│ CONVERSATION    │    │ • Total: 0.8      │    │ └────────────────┘ │
+│   HISTORY       │    └───────────────────┘    │ ┌────────────────┐ │
+├─────────────────┤                             │ │ Intensity Trend│ │
+│ Msg1: score 0.1 │                             │ │  Slope: +0.25  │ │
+│ Msg2: score 0.3 │                             │ └────────────────┘ │
+│ Msg3: score 0.6 │                             │ ┌────────────────┐ │
+└─────────────────┘                             │ │ Sentiment Trend│ │
+                       ┌───────────────────┐    │ │  Slope: -0.30  │ │
+                       │  STATE UPDATE     │◀───└────────────────┘ │
+                       │                   │                       │
+                       │ • Add new scores  │    ┌────────────────┐ │
+                       │ • Maintain window │◀───│ PATTERN DETECT │ │
+                       │ (10 messages max) │    │                │ │
+                       └───────────────────┘    │ • Repeated     │ │
+                              │                 │   aggression  │ │
+                              ▼                 │ • Increasing  │ │
+                       ┌───────────────────┐    │   threats     │ │
+                       │  ESCALATION SCORE │    └────────────────┘ │
+                       │                   │                       │
+                       │ Calculation:      │                       │
+                       │ • Abuse trend × 0.3│                      │
+                       │ • Intensity × 0.25│                      │
+                       │ • Sentiment × 0.2 │                      │
+                       │ • Spikes × 0.15   │                      │
+                       │ • Volatility × 0.1│                      │
+                       │ Total: 0.82       │                      │
+                       └───────────────────┘                      │

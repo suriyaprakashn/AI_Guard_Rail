@@ -1,0 +1,21 @@
+┌─────────────────────────────────────────────────────────────┐
+│                    TEXT PREPROCESSING                       │
+├─────────────────────────────────────────────────────────────┤
+│  Input: "U r an idiot! 😡 WTF is wrong with u? http://ex.com" │
+└─────────────────────────────┬───────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    CLEANING PIPELINE                        │
+├─────────────────────────────────────────────────────────────┤
+│  Step 1: Lowercase → "u r an idiot! 😡 wtf is wrong with u?" │
+│  Step 2: URL Removal → Remove "http://ex.com"               │
+│  Step 3: Handle Mentions → No change                        │
+│  Step 4: Emoji Translation → "angry"                        │
+│  Step 5: Slang Expansion → "you are an idiot! angry what..."│
+│  Step 6: Whitespace Clean → Final clean text                │
+└─────────────────────────────┬───────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   PROCESSED OUTPUT                          │
+│  "you are an idiot! angry what the fuck is wrong with you?" │
+└─────────────────────────────────────────────────────────────┘

@@ -37,7 +37,7 @@ def analyze_escalation_pattern(conversation_id, current_message, abuse_score, se
     trend_analysis = analyze_trends(state)
     
     return {
-        'escalation_detected': escalation_score > 0.7,
+        'escalation_detected': escalation_score > 0.6,
         'escalation_score': escalation_score,
         'trend_analysis': trend_analysis,
         'current_intensity': current_intensity,

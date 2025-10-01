@@ -1,0 +1,16 @@
+┌─────────────────┐    ┌───────────────────┐    ┌────────────────────┐
+│   USER INPUT    │───▶│   PREPROCESSING   │───▶│  SAFETY MODELS     │
+│                 │    │                   │    │                    │
+│ • Raw Message   │    │ • Text Cleaning   │    │ ┌────────────────┐ │
+│ • Age Profile   │    │ • Slang Expansion │    │ │  ABUSE DETECT  │ │
+│ • Conversation  │    │ • Emoji Handling  │    │ └────────────────┘ │
+└─────────────────┘    │ • URL Removal    │    │ ┌────────────────┐ │
+                       └───────────────────┘    │ │  ESCALATION    │ │
+                                                │ └────────────────┘ │
+┌─────────────────┐    ┌───────────────────┐    │ ┌────────────────┐ │
+│   RESULTS       │◀───│   INTEGRATION     │◀───│ │  CRISIS        │ │
+│                 │    │                   │    │ └────────────────┘ │
+│ • Safety Status │    │ • Combine Results │    │ ┌────────────────┐ │
+│ • Actions       │    │ • Priority Logic  │    │ │  CONTENT FILTER│ │
+│ • Metrics       │    │ • Status Decision │    │ └────────────────┘ │
+└─────────────────┘    └───────────────────┘    └────────────────────┘

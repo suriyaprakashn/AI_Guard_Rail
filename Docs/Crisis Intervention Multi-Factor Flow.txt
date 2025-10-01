@@ -1,0 +1,28 @@
+┌─────────────────────────────────────────────────────────────┐
+│                 CRISIS RISK ASSESSMENT                      │
+├─────────────────────────────────────────────────────────────┤
+│  Input: "I want to kill myself, everything is hopeless"     │
+└─────────────────────────────┬───────────────────────────────┘
+                              ▼
+┌─────────────────┐    ┌───────────────────┐    ┌────────────────────┐
+│  KEYWORD        │    │  BEHAVIORAL       │    │  CONTEXTUAL        │
+│  MATCHING       │    │  ANALYSIS         │    │  ANALYSIS          │
+├─────────────────┤    ├───────────────────┤    ├────────────────────┤
+│ • "kill myself" │    │ • Self-blame:     │    │ • Isolation:       │
+│   weight: 2.0   │    │   "I'm worthless" │    │   "no one cares"   │
+│ • "hopeless"    │    │ • Goodbye:        │    │ • Hopelessness:    │
+│   weight: 1.2   │    │   "final message" │    │   "no way out"     │
+│ Total: 3.2      │    │ Score: 0.6        │    │ Score: 0.4         │
+└─────────────────┘    └───────────────────┘    └────────────────────┘
+                              │
+                              ▼
+┌─────────────────┐    ┌───────────────────┐    ┌────────────────────┐
+│  EMOTIONAL      │    │  COMBINE SCORES   │    │  RISK LEVEL        │
+│  INTENSITY      │    │                   │    │  DETERMINATION     │
+├─────────────────┤    ├───────────────────┤    ├────────────────────┤
+│ • !!!: +0.3     │    │ • Keywords: 3.2×0.4│   │ • CRITICAL: ≥2.5   │
+│ • Crying: +0.4  │    │ • Behavioral: 0.6×0.2│  │ • HIGH: ≥1.5      │
+│ • Caps: +0.4    │    │ • Contextual: 0.4×0.25│ │ • MEDIUM: ≥0.8    │
+│ Total: 1.1      │    │ • Emotional: 1.1×0.15│ │ • LOW: <0.8        │
+└─────────────────┘    │ Total: 1.8        │    │ Result: HIGH        │
+                       └───────────────────┘    └────────────────────┘

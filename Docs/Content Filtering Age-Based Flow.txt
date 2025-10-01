@@ -1,0 +1,30 @@
+┌─────────────────────────────────────────────────────────────┐
+│                 CONTENT FILTERING FLOW                      │
+├─────────────────────────────────────────────────────────────┤
+│  Input: "This movie contains explicit violence and drugs"   │
+│  Age Profile: "child"                                       │
+└─────────────────────────────┬───────────────────────────────┘
+                              ▼
+┌─────────────────┐    ┌───────────────────┐    ┌────────────────────┐
+│  RESTRICTED     │    │  COMPLEXITY       │    │  EMOTIONAL TONE    │
+│  CONTENT CHECK  │    │  ANALYSIS         │    │  ANALYSIS          │
+├─────────────────┤    ├───────────────────┤    ├────────────────────┤
+│ • Violence: ✅  │    │ • Readability:    │    │ • Positive: 0      │
+│ • Explicit: ✅  │    │    Flesch: 60     │    │ • Negative: 2      │
+│ • Drugs: ✅     │    │ • Complexity: 4.0 │    │ • Ratio: 1.0       │
+│ • Found: 3      │    │ • Threshold: 3.0  │    │ • Appropriate: ❌  │
+└─────────────────┘    └───────────────────┘    └────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   FINAL DECISION                            │
+├─────────────────────────────────────────────────────────────┤
+│  Restricted Content: 3 categories ❌                        │
+│  Complexity: 4.0 > 3.0 threshold ❌                         │
+│  Emotional Tone: Negative ratio 1.0 ❌                      │
+│                                                             │
+│  RESULT: INAPPROPRIATE - BLOCK                             │
+│  Reason: Restricted content: violence, explicit, drugs;    │
+│          Content too complex for 5+ age group;             │
+│          Emotional tone not appropriate for age group      │
+└─────────────────────────────────────────────────────────────┘

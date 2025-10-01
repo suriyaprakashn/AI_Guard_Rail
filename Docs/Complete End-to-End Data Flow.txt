@@ -1,0 +1,14 @@
+┌───────┐    ┌───────────┐    ┌───────────┐    ┌───────────┐    ┌───────┐
+│ User  │───▶│ Streamlit │───▶│ Preproc   │───▶│  Models   │───▶│Results│
+│ Input │    │   App     │    │ Pipeline  │    │  Parallel │    │Display│
+└───────┘    └───────────┘    └───────────┘    └───────────┘    └───────┘
+     │              │               │               │               │
+     │              │               │               │               │
+     ▼              ▼               ▼               ▼               ▼
+┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+│Message  │    │Session  │    │Clean    │    │Abuse    │    │Safety   │
+│Text     │    │State    │    │Text     │    │Score    │    │Status   │
+│Age Profile│  │Metrics  │    │Features │    │Escalation│   │Actions  │
+│Conversation│ │History  │    │Slang    │    │Crisis   │    │Metrics  │
+└─────────┘    └─────────┘    │Emojis   │    │Content  │    │Resources│
+                              └─────────┘    └─────────┘    └─────────┘

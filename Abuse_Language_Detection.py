@@ -277,7 +277,7 @@ def detect_abuse_text(text):
                 abuse_scores[label] = score
             
             # Determine if abusive based on thresholds
-            toxic_threshold = 0.7
+            toxic_threshold = 0.6
             is_abusive = any(score > toxic_threshold for score in abuse_scores.values())
             max_score = max(abuse_scores.values()) if abuse_scores else 0
             
