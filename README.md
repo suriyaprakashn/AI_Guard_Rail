@@ -46,14 +46,13 @@ twitter_parsed_dataset.csv
 
 youtube_parsed_dataset.csv
 
-**Run the application
-bash**
-
+Run the application
+bash
 streamlit run app.py
 
 Open your browser to http://localhost:8501
 
-## 📁 Project Structure
+📁 Project Structure
 
 AI_Guard_Rail/
 ├── app.py                          # Main Streamlit application
@@ -68,9 +67,9 @@ AI_Guard_Rail/
 ├── data/                          # Cyber-bullying datasets
 └── models/                        # Trained model files (auto-created)
 
-## 🎯 Usage
+🎯 Usage
 
-**Basic Analysis**
+Basic Analysis
 
 Select Age Profile in sidebar (child, teen, adult)
 
@@ -86,7 +85,7 @@ Recommended actions
 
 System metrics
 
-**Dataset Management**
+Dataset Management
 
 Click "Load Cyber-bullying Datasets" to load training data
 
@@ -108,9 +107,9 @@ Inappropriate content
 
 Escalating conversations
 
-🔧 **Configuration**
+🔧 Configuration
 
-*Age Profiles*
+Age Profiles
 
 Child (5-12): No violence, drugs, explicit content + simple language
 
@@ -118,7 +117,7 @@ Teen (13-17): No explicit content + moderate complexity
 
 Adult (18+): Minimal restrictions
 
-*Model Settings*
+Model Settings
 
 Adjust detection thresholds in individual model files:
 
@@ -128,7 +127,7 @@ Crisis intervention: Crisis_Intervention.py (risk thresholds)
 
 Content filtering: Content_Filtering.py (complexity thresholds)
 
-📊 **Model Evaluation**
+📊 Model Evaluation
 
 Run comprehensive evaluation:
 bash
@@ -138,7 +137,7 @@ python test_system.py
 # Run detailed evaluation in the app
 # Click "Run Evaluation" in the Streamlit sidebar
 
-*Evaluation metrics include:*
+Evaluation metrics include:
 
 Accuracy, Precision, Recall, F1-Score
 
@@ -148,7 +147,7 @@ ROC-AUC curves (when probability scores available)
 
 Dataset-specific performance
 
-🛡️**Safety Features**
+🛡️ Safety Features
 
 Multi-layered Detection
 
@@ -160,7 +159,7 @@ Tertiary: Rule-based patterns
 
 Final: Context-aware heuristics
 
-*Crisis Resources*
+Crisis Resources
 
 Automatic provision of emergency resources for high-risk situations:
 
@@ -179,7 +178,7 @@ Self-reflection pattern recognition
 
 Multilingual support
 
-🚨 **Emergency Protocols**
+🚨 Emergency Protocols
 
 Critical Risk Responses
 
@@ -191,7 +190,7 @@ ROUTINE_CHECK: Moderate risk content
 
 MONITOR: Low risk, continued observation
 
-*Content Blocking*
+Content Blocking
 
 BLOCK: Inappropriate content for age group
 
@@ -199,7 +198,7 @@ ALLOW: Safe content
 
 FLAG: Requires human review
 
-🔍 **Technical Details**
+🔍 Technical Details
 
 Models Used
 
@@ -209,7 +208,7 @@ ML Fallback: Random Forest with TF-IDF + behavioral features
 
 Rule-based: 50+ patterns for slang, evasion, and platform-specific content
 
-**Performance**
+Performance
 
 Real-time processing: < 2 seconds per message
 
@@ -219,7 +218,7 @@ Recall: 89% on crisis keyword detection
 
 Precision: 87% on content filtering
 
-🐛 **Troubleshooting**
+🐛 Troubleshooting
 
 Common Issues
 
@@ -241,7 +240,7 @@ Use virtual environment
 
 Check Python version (3.8+ required)
 
-*Support*
+Support
 
 For technical support:
 
@@ -251,11 +250,11 @@ Verify dataset formats match expected structure
 
 Ensure all dependencies are installed
 
-📄 **License**
+📄 License
 
 MIT License - see LICENSE file for details.
 
-🤝 **Contributing**
+🤝 Contributing
 
 Fork the repository
 
@@ -267,7 +266,7 @@ Add tests
 
 Submit a pull request
 
-🎓 **Citation**
+🎓 Citation
 
 If you use this code in your research, please cite:
 
